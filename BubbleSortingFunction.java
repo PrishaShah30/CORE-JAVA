@@ -1,27 +1,33 @@
-public class BubbleSortingFunction {
-    public static void printArray(int arr[]){
-        for(int i=0; i<arr.length;i++){
-            System.out.print(arr[i]+" ");
+public class Arithmetic {
+    public static void main(String[] args) {
+        // Check if two command-line arguments are provided
+        if (args.length < 2) {
+            System.out.println("Please provide two numbers as command-line arguments.");
+            return;
         }
-        System.out.println();
-    }
-    public static void main(String args[]){
-        int arr[] = {7,8,3,1,2};
-        // time complexity = Big O(n^2)
-        // not a good sorting time  
-        //bubble sort = ascending order 
-        // it'll take a loop then will check from the whole array pair by pair and keep the largest number at last
-        // after which will take a second run untill all the number's are in an ascending order 
-        for(int i=0; i<arr.length-1;i++){ // 
-            for(int j=0;j<arr.length-i-1;j++){
-                if(arr[j]>arr[j+1]){
-                    //swap now 
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
+
+        // Convert command-line arguments to double
+        double a = Double.parseDouble(args[0]);
+        double b = Double.parseDouble(args[1]);
+
+        // Check if b is not zero to avoid division by zero
+        if (b == 0) {
+            System.out.println("Cannot divide by zero. Please provide a non-zero second number.");
+            return;
         }
-        printArray(arr);
+
+        // Perform arithmetic operations
+        double sum = a + b;
+        double multiply = a * b;
+        double divide = a / b;
+        double sub = a - b;
+        double mod = a % b;
+
+        // Display the results
+        System.out.println(a + " + " + b + " = " + sum);
+        System.out.println(a + " * " + b + " = " + multiply);
+        System.out.println(a + " / " + b + " = " + divide);
+        System.out.println(a + " - " + b + " = " + sub);
+        System.out.println(a + " % " + b + " = " + mod);
     }
 }
