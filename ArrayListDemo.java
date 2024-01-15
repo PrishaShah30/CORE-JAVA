@@ -1,49 +1,51 @@
 import java.util.ArrayList;
-// this pakage is always to be if using ArrayList 
 import java.util.Collections;
-// imports a package for collections 
-// if you dont want to put too many packages at different tinmes just put in one thing : import.java.util.* but 
-// it brings a lot of other packages too that are not really needed 
+
 public class ArrayListDemo {
     public static void main(String args[]) {
-        ArrayList<Integer> array = new ArrayList(); // (1,45,65,78,95,35)
-        array.add(35); // a[0]
+        // Creating an ArrayList of integers
+        ArrayList<Integer> array = new ArrayList<>(); // (1, 45, 65, 78, 95, 35)
+        array.add(35); // Adding elements to the ArrayList
         array.add(20);
         array.add(3);
         array.add(26);
-        array.add(82); // a[n]
-        System.out.println(array);
+        array.add(82);
+        System.out.println(array); // Printing the ArrayList
+
+        // Iterating through the ArrayList using a for loop
         for (int i = 0; i < array.size(); i++) {
-            //get 
+            // Getting each element using the get method
             System.out.println(array.get(i));
         }
-        // one more way to indexed element 
-       int b= array.get(0);
-       System.out.println(b);
 
-       // if we want to add at a particular index
-       array.add(5, 1);
-       System.out.println(array);
+        // Another way to get an indexed element
+        int b = array.get(0);
+        System.out.println(b);
 
-       //set element 
-       array.set(0,5);
+        // Adding an element at a particular index
+        array.add(5, 1);
         System.out.println(array);
 
-        //delete element 
+        // Setting an element at a specific index
+        array.set(0, 5);
+        System.out.println(array);
+
+        // Deleting an element at a specific index
         array.remove(3);
         System.out.println(array);
 
-        //size
+        // Getting the size of the ArrayList
         int size = array.size();
-        System.out.println(size);
+        System.out.println("Size of the ArrayList: " + size);
 
-        //loops 
-        for(int i=0; i<array.size();i++){
-            System.out.print(array.get(i));
+        // Iterating through the ArrayList using a for loop
+        for (int i = 0; i < array.size(); i++) {
+            System.out.print(array.get(i) + " ");
         }
         System.out.println();
 
-        ArrayList<String> array2 = new ArrayList();
+        // Creating an ArrayList of strings
+        ArrayList<String> array2 = new ArrayList<>();
         int numWordsOfLength = array2.size();
         array2.add("Oh");
         array2.add("me");
@@ -51,17 +53,17 @@ public class ArrayListDemo {
         array2.add("cs");
         array2.add("sshh");
 
-        System.out.println(numWordsOfLength);
+        // Printing the number of words in the ArrayList
+        System.out.println("Number of words in array2: " + numWordsOfLength);
 
-        for(int i=0; i<array2.size();i++){
-            System.out.print(array2.get(i));
+        // Iterating through the ArrayList of strings
+        for (int i = 0; i < array2.size(); i++) {
+            System.out.print(array2.get(i) + " ");
         }
         System.out.println();
 
-
-        //sorting 
+        // Sorting the ArrayList of integers
         Collections.sort(array);
-        System.out.println(array);
-
+        System.out.println("Sorted ArrayList: " + array);
     }
 }
