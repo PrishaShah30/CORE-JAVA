@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ScanClass {
     public static void main(String[] args){
-import java.util.Scanner;
+        
         // The Scanner class is used to take input from the console or user.
         // Before using Scanner, we need to import it: import java.util.Scanner;
 
