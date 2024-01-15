@@ -1,10 +1,8 @@
-// Prisha shah 
-// 22nd feb 
-// advanced patterns with loops 
+// ADVANCED PATTERNS WITH CONDITIONAL LOOPS
 
 public class AdvancedPatterns {
     public static void main(String args[]){
-// butterfly pattern 
+//                                           *BUTTERFLY PATTERN*
     //  int n =6;
     //  // Upper half 
     //  // first part 
@@ -41,7 +39,7 @@ public class AdvancedPatterns {
     //     System.out.println();
     //  }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-//Solid Rhombus
+//                                                  *Solid Rhombus*
 // int n=5;
 // for(int i=1;i<=n;i++){
 //     //spaces
@@ -55,7 +53,7 @@ public class AdvancedPatterns {
 //     System.out.println();
 // }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-//Numeric Pyramid 
+//                                                   *Numeric Pyramid* 
 // int n=5;
 // for(int i=1;i<=n;i++){
 //     //spaces
@@ -69,14 +67,16 @@ public class AdvancedPatterns {
 //     System.out.println();
 // }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-// Palindromic Pattern 
+//                                                *Palindromic Pattern* 
 /*
-     1
-   2 1 2 
-  3 2 1 2 3 
- 4 3 2 1 2 3 4 
+        1
+      2 1 2 
+    3 2 1 2 3 
+  4 3 2 1 2 3 4 
 5 4 3 2 1 2 3 4 5 
+
  */
+        
 // int n=5;
 // for(int i=1;i<=n;i++){
 //     //spaces
@@ -94,7 +94,7 @@ public class AdvancedPatterns {
 //     System.out.println();
 // }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-//Daimond pattern 
+//                                                *Daimond pattern* 
 // int n=4;
 //     //upper half
 //     for(int i=1;i<=n;i++){
