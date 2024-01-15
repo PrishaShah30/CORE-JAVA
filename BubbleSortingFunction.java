@@ -1,33 +1,35 @@
-public class Arithmetic {
-    public static void main(String[] args) {
-        // Check if two command-line arguments are provided
-        if (args.length < 2) {
-            System.out.println("Please provide two numbers as command-line arguments.");
-            return;
+public class BubbleSortingFunction {
+    // Function to print the elements of an array
+    public static void printArray(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {7, 8, 3, 1, 2};
+
+        // Bubble Sort:
+        // Time complexity: O(n^2)
+        // Not the most efficient sorting algorithm, but simple to understand
+        // Bubble sort works by repeatedly stepping through the list, comparing each
+        // pair of adjacent elements, and swapping them if they are in the wrong order.
+        // The pass through the list is repeated until the list is sorted.
+
+        // Ascending order using Bubble Sort
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // Swap elements if they are in the wrong order
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
         }
 
-        // Convert command-line arguments to double
-        double a = Double.parseDouble(args[0]);
-        double b = Double.parseDouble(args[1]);
-
-        // Check if b is not zero to avoid division by zero
-        if (b == 0) {
-            System.out.println("Cannot divide by zero. Please provide a non-zero second number.");
-            return;
-        }
-
-        // Perform arithmetic operations
-        double sum = a + b;
-        double multiply = a * b;
-        double divide = a / b;
-        double sub = a - b;
-        double mod = a % b;
-
-        // Display the results
-        System.out.println(a + " + " + b + " = " + sum);
-        System.out.println(a + " * " + b + " = " + multiply);
-        System.out.println(a + " / " + b + " = " + divide);
-        System.out.println(a + " - " + b + " = " + sub);
-        System.out.println(a + " % " + b + " = " + mod);
+        // Print the sorted array
+        printArray(arr);
     }
 }
