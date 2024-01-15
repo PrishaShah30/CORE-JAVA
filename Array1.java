@@ -14,8 +14,7 @@ public class Array1 {
         // and then print if you dont do so you'll receive memory address-- hashcode
 
         /*
-         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         * - - - - - - - - - - - - - - - - - - - - - - - -
+         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          */
 
         /* Print from index 0 to 5 */
@@ -27,8 +26,7 @@ public class Array1 {
         // }
 
         /*
-         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         * - - - - - - - - - - - - - - - - - - - - - - - -
+         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
          */
 
         /* Assign values and print with the digits with its index numbers */
@@ -47,8 +45,8 @@ public class Array1 {
          */
         /* Print random number in a 2D array */
 
-        // 2D array has two dimensions [] [] first for the rows and second for the
-        // columns
+        // 2D array has two dimensions [] [] 
+        // first for the rows and second for columns
         // double array3[][] = new double[5][7];
         // for (int r = 0; r < array3.length; r++) {
         //     for (int c = 0; c < array3[0].length; c++) {
@@ -56,11 +54,9 @@ public class Array1 {
         //         System.out.println(array3[r][c]);
         //     }
         // }
-        // QUESTION System.out.println(array3[r][c]);
 
         /*
-         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         * - - - - - - - - - - - - - - - - - - - - - - - -
+         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          */
 
         /* Check for IndexOutoFbOUNDeXCEPTION ERROR */
@@ -75,15 +71,14 @@ public class Array1 {
         // System.out.println(c[9]);// no compilation error
 
         /*
-         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         * - - - - - - - - - - - - - - - - - - - - - - - -
+         * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          */
 
         /* Scanner scr */
         // Scanner is a class that takes inputs from the user from the console bar 
         int x[] = new int[7];
         Scanner scr = new Scanner(System.in); // int char float double string
-        // new - keyword for allocation of memory for scr naam na object mateh
+        // new - keyword for allocation of memory
         // ClassName objectName = new ClassName();
 
         for (int i = 0; i < x.length; i++) { // 7
@@ -95,10 +90,9 @@ public class Array1 {
         // nextInt();
         // nextFloat();
         // nextDouble();
-        // next(); //royal
-        // nextLine(); // royal edu ahd ind
-        // System.out.println(x);// memory address - hashcode
-
+        // next(); 
+        // nextLine(); 
+        // System.out.println(x);
         // for (int i = 0; i < x.length; i++) {
         //     System.out.println(x[i]);
         // }
